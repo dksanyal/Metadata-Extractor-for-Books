@@ -8,6 +8,15 @@ We developed a Python script to extract metadata from NCERT books. In the basic 
 
 
 
+[2] CITATION
+
+This work is funded by the NDLI project sponsored by MHRD, Govt. of India. 
+If you use these scripts, we request you to kindly cite the following paper:
+
+Akhtar, Sk. Simran, Debarshi Kumar Sanyal, Samiran Chattopadhyay, Plaban Kumar Bhowmick, and Partha Pratim Das. "A metadata extractor for books in a digital library." International Conference on Asian Digital Libraries (ICADL). Springer, 2018.
+
+
+
 [2] INPUT & OUTPUT
 
 The software takes a set of PDF files (each containing front matter of a book) stored in a directory and stores metadata generated from them in a directory. Metadata for each book is organized according to NDLI schema and available as a JSON file.
