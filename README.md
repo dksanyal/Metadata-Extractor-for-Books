@@ -14,20 +14,27 @@ The software takes a set of PDF files (each containing front matter of a book) s
 HOW TO RUN (COMMANDLINE)
 
 To use the software, keep your PDF files in a directory INDIR. Suppose you want the output JSON files to be output in directory OUTDIR. Assume these directories are created under the current directory. So, extract the file INOUT.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory and excecute the following commandline:
+
 python extract_metadata.py  ./INDIR/  ./OUTDIR/
 
 
 DEPENDENCIES
 
-The code uses the following external libraries/tools: 
+The code uses the following external libraries/tools:
+
 Linux utilities:  pdfinfo, pdftohtml 
+
 Image processing / OCR libraries: Tesseract, ImageMagick,
+
 Python libraries: re, xlrd, json, sys, stringdist, bs4, requests, OrderedDict(collections), io, os, subprocess.
 
 
 TEST CONFIGURATION
 
 The code was tested using the following configuration:
+
 1. Linux: Ubuntu 18.04
+
 2. Python 3.6.5
+
 3. GCC 7.3.0 on Linux
