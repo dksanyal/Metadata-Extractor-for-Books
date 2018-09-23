@@ -30,7 +30,7 @@ To use the software, keep your PDF files in a directory INDIR. Suppose you want 
 
 python extract_metadata.py  ./INDIR/  ./OUTDIR/
 
-
+(The above script calls metadata.py which first runs basic flow using basic.py and if needed, follows it up with alternate flow. The evaluate.py script is used to evaluate the performance of metadata extraction with respect to manually curated golden metadata.)
 
 [5] DEPENDENCIES
 
