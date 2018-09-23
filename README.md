@@ -26,7 +26,7 @@ The software takes a set of PDF files (each containing front matter of a book) s
 
 [4] HOW TO RUN (COMMANDLINE)
 
-To use the software, keep your PDF files in a directory INDIR. Suppose you want the output JSON files to be output in directory OUTDIR. Assume these directories are created under the current directory. So, extract the file INOUT.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory and excecute the following commandline:
+To use the software, keep your PDF files in a directory INDIR. Suppose you want the output JSON files to be output in directory OUTDIR. Assume these directories are created under the current directory. So, extract the file testcase.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory and excecute the following commandline:
 
 python extract_metadata.py  ./INDIR/  ./OUTDIR/
 
