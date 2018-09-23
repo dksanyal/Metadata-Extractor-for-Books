@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # AUTHOR: Sk. Simran Akhtar.
-# DATE: 21-Sep-2018.
+# DATE: 23-Sep-2018.
 # This work is funded by the NDLI project sponsored by MHRD, Govt. of India. If you use these scripts, we request you to kindly cite the following paper:
 # Akhtar, Sk. Simran, et al. "A metadata extractor for books in a digital library." International Conference on Asian Digital Libraries (ICADL). Springer, 2018.
 
