@@ -16,9 +16,9 @@ This work is funded by the NDLI project sponsored by MHRD, Govt. of India. The s
 
 CODE / HOW TO RUN
 -----------------
-The software takes a set of PDF files (each containing front matter of a book) stored in a directory and stores metadata generated from them in a directory. Metadata for each book is organized according to NDLI schema and available as a JSON file.
+The software takes a set of PDF files (each containing front matter of a book) stored in a directory, generates metadata from them, and stores the metadata in a directory. Metadata for each book is organized according to NDLI schema and available as a JSON file.
 
-To use the software, keep your PDF files in a directory INDIR. Suppose you want the output JSON files to be output in directory OUTDIR. Assume these directories are created under the current directory. So, extract the file testcase.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory and excecute the following commandline:
+Here is an example use case. Extract the file testcase.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory. INDIR contains input PDF files. The generated JSON files will go to OUTDIR (it is preloaded with the JSON files we got by running the tool). Excecute the following commandline:
 
 python extract_metadata.py  ./INDIR/  ./OUTDIR/
 
