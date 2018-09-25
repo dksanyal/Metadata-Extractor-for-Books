@@ -20,7 +20,7 @@ The software takes a set of PDF files (each containing front matter of a book) s
 
 Here is an example use case. Extract the file testcase.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory. INDIR contains input PDF files. The generated JSON files will go to OUTDIR (it is preloaded with the JSON files we got by running the tool). Excecute the following commandline:
 
-python extract_metadata.py  ./INDIR/  ./OUTDIR/
+python ./extract_metadata.py  ./INDIR/  ./OUTDIR/
 
 (The above script calls metadata.py which first runs basic flow using basic.py and if needed, follows it up with alternate flow. The evaluate.py script is used to evaluate the performance of metadata extraction with respect to manually curated golden metadata.)
 
