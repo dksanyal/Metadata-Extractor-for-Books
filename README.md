@@ -5,14 +5,13 @@ Rule-based python script to extract metadata from NCERT books
 We developed a Python script to extract metadata from NCERT books. In the basic flow, the PDF file of the book is first converted to XML (using pdftohtml), then analyzed (by looking at spatial cues and text patterns) for specific metadata. DDC is inferred using ACT-DL service on the Web. If the title turns out to be an empty string, the PDF file is assumed to be an image from which text extraction must be preceded by OCR. So it is sent to an alternate flow where the PDF is OCR'ed using Tesseract (legacy mode; no LSTM). The resulting hOCR files are then pushed into the basic flow.
 
 
-
 HOW TO CITE
 -----------
-This work is funded by the NDLI project sponsored by MHRD, Govt. of India. The scripts are written and tested by Sk. Simran Akhtar (4th year student (2015-2019), Department of Information Technology, Jadavpur University).
-If you use these scripts, we request you to kindly cite the following paper:
+If you use these scripts, kindly cite the following paper:
 
 Akhtar, Sk. Simran, Debarshi Kumar Sanyal, Samiran Chattopadhyay, Plaban Kumar Bhowmick, and Partha Pratim Das. "A metadata extractor for books in a digital library." International Conference on Asian Digital Libraries (ICADL). Springer, 2018.
 
+This work is funded by the NDLI project sponsored by MHRD, Govt. of India. The scripts are written and tested by Sk. Simran Akhtar (4th year student (2015-2019), Department of Information Technology, Jadavpur University).
 
 
 CODE / HOW TO RUN
