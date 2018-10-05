@@ -18,11 +18,17 @@ CODE / HOW TO RUN
 -----------------
 The software takes a set of PDF files (each containing front matter of a book) stored in a directory, generates metadata from them, and stores the metadata in a directory. Metadata for each book is organized according to NDLI schema and available as a JSON file.
 
-Here is an example use case. Extract the file testcase.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory. INDIR contains input PDF files. The generated JSON files will go to OUTDIR (it is preloaded with the JSON files we got by running the tool). Excecute the following commandline:
+Here is an example use case. Extract the file testcase.zip and put INDIR, OUTDIR and the Python scripts in the same parent directory. INDIR contains input PDF files. The generated JSON files will go to OUTDIR (it is preloaded with the JSON files we got by running the tool). Execute the following commandline:
 
-python ./extract_metadata.py  ./INDIR/  ./OUTDIR/
+python3 ./extract_metadata.py  ./INDIR/  ./OUTDIR/
 
-(The above script calls metadata.py which first runs basic flow using basic.py and if needed, follows it up with alternate flow. The evaluate.py script is used to evaluate the performance of metadata extraction with respect to manually curated golden metadata.)
+(The above script calls metadata.py which first runs basic flow using basic.py and if needed, follows it up with alternate flow.) 
+
+To generate the performance graphs, use the following commandline:
+
+python3 plotData.py "OutputMetadata_NCERTBooks_(Sep25_2018)_v1.zip"  "GoldenMetadata_NCERTBooks_(Sep25_2018)_v1.xlsx"
+
+(The plotData.py script generates bar charts showing precision, recall and F1-score. The evaluate.py script actually evaluates the performance of metadata extraction with respect to manually curated golden metadata. plotData.py uses the service of evaluate.py.)
 
 DEPENDENCIES: The code uses the following external libraries/tools:
 
