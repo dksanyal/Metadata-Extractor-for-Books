@@ -26,7 +26,7 @@ python3 ./extract_metadata.py  ./INDIR/  ./OUTDIR/
 
 To generate the performance graphs, use the following commandline:
 
-python3 plotData.py "OutputMetadata_NCERTBooks_(Sep25_2018)_v1.zip"  "GoldenMetadata_NCERTBooks_(Sep25_2018)_v1.xlsx"
+python3 plotData.py "OutputMetadata_NCERTBooks_(Sep25_2018)_v1.zip"  "GoldenMetadata_NCERTBooks_(Sep25_2018)__v1.xlsx"
 
 (The plotData.py script generates bar charts showing precision, recall and F1-score. The evaluate.py script actually evaluates the performance of metadata extraction with respect to manually curated golden metadata. plotData.py uses the service of evaluate.py.)
 
